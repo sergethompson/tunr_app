@@ -1,0 +1,19 @@
+<!-- A STRAIGHT UP HTML FORM -->
+
+<!-- <form action="/bands" method="post">
+	<input class="form-control" type="text"	name="name">
+	<button class="btn btn-primary" id="submit">Create Band</button>
+</form> -->
+
+<!-- Rails Form Helper that takes a band object! -->
+<h1>I KNOW THAT GARAGEBAND IS A DEMOCRATIZING FORCE IN OUR SOCIETY, BUT YOU SUCK.</h1>
+<!-- 
+<%= form_for @band  do |f| %>
+	<%= f.label :name, "Name:" %>
+	<%= f.text_field :name, placeholder: "Name", class: "form-control" %>
+	<%= f.submit nil, class:"btn btn-primary" %>
+<% end %>
+ -->
+
+ <%= render partial: "band_form", locals: {band: @band} %>
+

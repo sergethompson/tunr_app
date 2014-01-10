@@ -1,0 +1,17 @@
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: tunr_app_development
+  pool: 5
+  username: sergethompson
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: tunr_app_test
+  pool: 5
+  username: sergethompson
+  password:
+

@@ -1,0 +1,11 @@
+<%= form_for band  do |f| %>
+	<%= f.label :name, "Name:" %>
+	<%= f.text_field :name, placeholder: "Name", class: "form-control" %>
+	<%= f.submit nil, class:"btn btn-primary", id:"submit" %>
+<% end %>
+
+# <%= form_tag("/bands/search", method: "get") do%> 
+# 	<%= label_tag(:band, "band") %>
+# 	<%= text_field_tag(:band) %> 
+# 	<%= submit_tag("Find Musician") %>
+# <% end %>
